@@ -1,23 +1,72 @@
 aid: d2g-oncology
-name: D2g Oncology
-description: D2g Oncology is a company surfaced as a portfolio company of lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/d2g-oncology.png
+name: D2G Oncology
+description: >-
+  D2G Oncology is a precision-oncology company based in Mountain View, California, reported to have
+  been founded in 2018 by Ian Winters. Public company descriptions characterize its work as applying
+  quantitative and multiplexed functional cancer genomics to relate drugs to genotypes in order to
+  advance precision cancer therapeutics. The company operates INSITE, a login-gated internal research
+  portal at www.d2g-insite.com supporting preclinical study management and result exploration. D2G
+  Oncology publishes no public developer API program, no developer portal, no API documentation, and
+  no client SDKs, and third-party company trackers list the company as inactive as of 2026. It was
+  surfaced through the Lightspeed Venture Partners portfolio and is retained here as an identity-only
+  profile.
 url: https://raw.githubusercontent.com/api-evangelist/d2g-oncology/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-program
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Oncology
+- Healthcare
+- Biotechnology
+- Therapeutics
+- Life Sciences
+- Precision Medicine
+- Functional Genomics
 apis: []
+common:
+- type: DomainSecurity
+  url: security/d2g-oncology-domain-security.yml
+- type: Website
+  url: https://www.d2g-insite.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-notes:
+  no-api-program: >-
+    Enrichment pass 2026-07-20 found no public developer API surface: no developer portal, no
+    documentation site, no consumer-facing OpenAPI/AsyncAPI/GraphQL, no first-party SDKs in npm,
+    PyPI, Maven Central, NuGet, RubyGems, Packagist or crates.io, and no usable /.well-known
+    artifacts. Every path probed on www.d2g-insite.com returns the single-page-app shell with HTTP
+    200 (soft 404), so security.txt, llms.txt, openid-configuration and api-catalog are all absent
+    despite returning 200 status codes.
+  domain-warning: >-
+    d2goncology.com is NO LONGER controlled by D2G Oncology. As of 2026-07-20 that domain serves an
+    unrelated Dubai travel business (Andaleeb Travel Agency) and presents a TLS certificate valid
+    only for *.web-hosting.com. Do not add it as a company property in future enrichment rounds. The
+    only live company-controlled property found is www.d2g-insite.com.
